@@ -23,7 +23,7 @@ Open your terminal and clone this repository:
 git clone https://github.com/hvrdhn88/servicenow-request-mcp-agent.git
 cd servicenow-request-mcp-agent
 
-🛠️ Step 2: Set Up the Environment
+## 🛠️ Step 2: Set Up the Environment
 We use a virtual environment to keep things clean.
 
 Mac/Linux:
