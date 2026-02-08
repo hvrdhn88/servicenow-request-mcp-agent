@@ -22,3 +22,62 @@ Open your terminal and clone this repository:
 ```bash
 git clone https://github.com/hvrdhn88/servicenow-request-mcp-agent.git
 cd servicenow-request-mcp-agent
+
+🛠️ Step 2: Set Up the Environment
+We use a virtual environment to keep things clean.
+
+Mac/Linux:
+
+Bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+Windows:
+
+Bash
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+Note: The requirements.txt file installs mcp and httpx automatically.
+
+⚙️ Step 3: Connect to Claude
+You need to tell Claude where your script is.
+
+Open the config file:
+
+Mac: ~/Library/Application Support/Claude/claude_desktop_config.json
+
+Windows: %APPDATA%\Claude\claude_desktop_config.json
+
+Add this configuration (Update the paths!):
+
+JSON
+{
+  "mcpServers": {
+    "servicenow-agent": {
+      "command": "/ABSOLUTE/PATH/TO/YOUR/venv/bin/python",
+      "args": [
+        "/ABSOLUTE/PATH/TO/YOUR/server.py"
+      ],
+      "env": {
+        "SN_INSTANCE": "https://devXXXXX.service-now.com",
+        "SN_USER": "admin",
+        "SN_PASS": "YOUR_REAL_PASSWORD"
+      }
+    }
+  }
+}
+🎮 Step 4: Run It!
+Restart Claude Desktop completely.
+
+Look for the 🔌 Plug Icon.
+
+Start chatting!
+
+Example Prompts:
+
+"Check the status of incident INC0010005."
+
+"Search the Knowledge Base for 'email issues'."
+
+"Order a 'Developer Laptop' for user 'Abraham Lincoln'."
