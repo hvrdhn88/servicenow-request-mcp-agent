@@ -20,10 +20,9 @@ Before you start, make sure you have:
 Open your terminal and clone this repository:
 
 ```bash
-git clone https://github.com/hvrdhn88/servicenow-request-mcp-agent.git
+git clone [https://github.com/hvrdhn88/servicenow-request-mcp-agent.git](https://github.com/hvrdhn88/servicenow-request-mcp-agent.git)
 cd servicenow-request-mcp-agent
-
-**## 🛠️ Step 2: Set Up the Environment**
+🛠️ Step 2: Set Up the Environment
 We use a virtual environment to keep things clean.
 
 Mac/Linux:
@@ -60,13 +59,15 @@ JSON
         "/ABSOLUTE/PATH/TO/YOUR/server.py"
       ],
       "env": {
-        "SN_INSTANCE": "https://devXXXXX.service-now.com",
+        "SN_INSTANCE": "[https://devXXXXX.service-now.com](https://devXXXXX.service-now.com)",
         "SN_USER": "admin",
         "SN_PASS": "YOUR_REAL_PASSWORD"
       }
     }
   }
 }
+Important: You must use the Absolute Path (e.g., /Users/yourname/...). Relative paths like venv/bin/python will not work.
+
 🎮 Step 4: Run It!
 Restart Claude Desktop completely.
 
@@ -81,37 +82,3 @@ Example Prompts:
 "Search the Knowledge Base for 'email issues'."
 
 "Order a 'Developer Laptop' for user 'Abraham Lincoln'."
-
-👨‍💻 Contributing
-Feel free to open an issue or submit a Pull Request!
-
-
-### **Step 2: How to update it**
-
-You have two ways to apply this:
-
-**Option A: In VS Code (Recommended)**
-1.  Open `README.md` in VS Code.
-2.  Delete everything currently in there.
-3.  Paste the code block above.
-4.  Save (`Cmd+S`).
-5.  Push to GitHub:
-    ```bash
-    git add README.md
-    git commit -m "Update README formatting"
-    git push
-    ```
-
-**Option B: Directly on GitHub.com**
-1.  Go to your repository page.
-2.  Click the **Pencil Icon** (✏️) on the `README.md` file.
-3.  Paste the code block above.
-4.  Click **"Commit changes..."** (green button).
-
-
-
-### **Why this looks better**
-* **`#`**: Makes big **Headings**.
-* **` ```bash `**: Makes those nice grey **Code Boxes** so people can copy commands easily.
-* **`**text**`**: Makes text **Bold**.
-* **`---`**: Adds a horizontal divider line.
