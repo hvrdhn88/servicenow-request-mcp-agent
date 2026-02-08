@@ -1,13 +1,4 @@
-Ahhh yep — I see exactly what happened 😅
-The issue is **missing section breaks and code fences**, so Markdown thinks parts of Steps 2–4 are still inside the Step 1 code block.
 
-Here’s a **fixed, GitHub-safe `README.md`** where **Steps 1–4 all render at the same heading level**, clean and aligned.
-
-👉 **Copy-paste this entire block as-is**
-
----
-
-````md
 # 🤖 ServiceNow Request MCP Agent
 
 **A local AI Agent that connects Claude Desktop directly to your ServiceNow instance.**
@@ -123,29 +114,4 @@ Order a "Developer Laptop" for user "Abraham Lincoln".
 
 ---
 
-## 🧠 What This Enables
 
-* Live ServiceNow data access
-* No custom REST scripts per table
-* Dynamic discovery via MCP
-* Secure, local-first execution
-
-Perfect for **POCs, PDIs, and agent experimentation** 🚀
-
-```
-
----
-
-### Why this now works ✅
-- Every code block is **explicitly closed**
-- Each step has its own `##` heading
-- No text accidentally lives inside a code fence
-- GitHub Markdown renders **Step 1–4 at the same level**
-
-If you want, I can also:
-- Add a **Quick Start (TL;DR)** section
-- Add **Troubleshooting (common MCP errors)**
-- Add a **ServiceNow table coverage list**
-
-Just tell me 👍
-```
