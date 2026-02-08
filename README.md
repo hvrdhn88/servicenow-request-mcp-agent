@@ -1,4 +1,4 @@
-# 🤖 ServiceNow MCP Agent
+# 🤖 ServiceNow Request MCP Agent
 
 **A local AI Agent that connects Claude Desktop directly to your ServiceNow instance.**
 
